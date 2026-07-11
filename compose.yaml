@@ -1,0 +1,10 @@
+services:
+  foundry:
+    build: .
+    image: foundry:latest
+    container_name: foundry
+    environment:
+    - FOUNDRY_PUBLIC_HOST=192.168.160.73
+    ports:
+      - "5606:5606"
+    restart: unless-stopped
